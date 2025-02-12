@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom Font Import */
+@font-face {
+  font-family: 'GeistMonoVF';
+  src: url('/fonts/GeistMonoVF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistVF';
+  src: url('/fonts/GeistVF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --background: #F6FAFE;
+  --foreground: #171717;
+  --font-geist-mono: 'GeistMonoVF', monospace;
+  --font-geist-sans: 'GeistVF', sans-serif;
+  --primary: #0D71C9;
+  --dark:#021626;
+  --gray: rgba(2, 22, 38, 0.12);
+  --error: #F23148;
+  --disabled: rgba(2, 22, 38, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #F6FAFE;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'GeistVF', 'GeistMonoVF', sans-serif;
+}
+
+/* Phone Input Container */
+.phone-input-container {
+  display: flex;
+  gap: 8px;
+}
+
+/* Style the input field */
+.phone-input-container input {
+  width: 100%;
+  height: 56px;
+  padding: 16px;
+  border: 2px solid var(--gray);
+  border-radius: 999px;
+  outline: none;
+}
+
+/* Focus styles */
+.phone-input-container input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+/* Style the country select dropdown */
+.phone-input-container .PhoneInputCountry {
+  display: flex;
+  min-width: 112px;
+  align-items: center;
+  padding: 8px 16px;
+  border: 2px solid var(--gray);
+  border-radius: 999px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* When focused */
+.phone-input-container .PhoneInputCountry:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+/* Style the flag dropdown */
+.phone-input-container .PhoneInputCountrySelect {
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Add some spacing between the flag and the input */
+.phone-input-container .PhoneInputCountryIcon {
+  margin-right: 8px;
+}
