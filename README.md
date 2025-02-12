@@ -37,7 +37,7 @@ Follow these steps to set up and run the application locally:
 
    ```bash
    git clone https://github.com/senat-selimoski/reg25.git
-   cd registration-app
+   cd reg25
 
 2. Install the dependencies:
 
