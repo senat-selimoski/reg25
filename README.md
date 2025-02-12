@@ -49,9 +49,9 @@ Follow these steps to set up and run the application locally:
 3. Run the application:
 
    ```bash
-   npm install
+   npm run dev
    # or
-   yarn install
+   yarn dev
 
 
 ### Explanation of New Sections:
