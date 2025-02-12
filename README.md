@@ -36,7 +36,7 @@ Follow these steps to set up and run the application locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/registration-app.git
+   git clone https://github.com/senat-selimoski/reg25.git
    cd registration-app
 
 2. Install the dependencies:
