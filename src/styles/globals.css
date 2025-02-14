@@ -68,6 +68,8 @@ body {
 /* Style the country select dropdown */
 .phone-input-container .PhoneInputCountry {
   display: flex;
+  max-width: 112px;
+  justify-content: center;
   min-width: 112px;
   align-items: center;
   padding: 8px 16px;

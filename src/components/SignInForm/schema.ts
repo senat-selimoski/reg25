@@ -17,8 +17,8 @@ export const step1Schema = z.object({
 export const step2Schema = z.object({
     phoneNumber: z
     .string()
-    .min(1, "Please enter a phone number.")
-    .regex(/^\+?[1-9]\d{1,14}$/, "Please check the phone number is in the correct format"),
+    .regex(/^\+?[1-9]\d{1,14}$/, "Please check the phone number is in the correct format")
+    .nonempty("Please enter a phone number.")
 });
 
 // Combined Schema for final submission
